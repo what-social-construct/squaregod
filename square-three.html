@@ -370,6 +370,24 @@
       </div>
     </div>
   </div>
+<script>
+// Remove inline padding-bottom aspect ratio constraints from all cover images
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.cover__img, img.cover__img').forEach(function(img) {
+    img.style.paddingBottom = '';
+    img.style.height = 'auto';
+    img.style.position = 'static';
+    img.style.background = 'none';
+    img.style.objectFit = 'unset';
+  });
+  document.querySelectorAll('.cover, .cover-normal, .cover-image, .cover-image-wrap').forEach(function(el) {
+    el.style.height = 'auto';
+    el.style.paddingBottom = '';
+    el.style.overflow = 'visible';
+    el.style.position = 'static';
+  });
+});
+</script>
 </body>
 <script type="text/javascript">
   // fix for Safari's back/forward cache
