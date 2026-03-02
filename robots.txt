@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://squaregod.com/sitemap.xml
