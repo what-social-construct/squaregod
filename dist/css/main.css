@@ -386,3 +386,36 @@ h1.js-inline-text-editable {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ── Remove ALL height/aspect constraints from gallery images ── */
+.cover__img,
+img.cover__img {
+  padding-bottom: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  position: static !important;
+  object-fit: unset !important;
+  width: 100% !important;
+  display: block !important;
+  background: none !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+.cover, .cover-normal {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding-bottom: 0 !important;
+  position: static !important;
+  overflow: visible !important;
+}
+
+.cover-image, .cover-image-wrap {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  position: static !important;
+}
