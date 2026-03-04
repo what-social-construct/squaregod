@@ -310,6 +310,25 @@ html.lightbox-zoomed #lightbox-img-wrap .lightbox-extra {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
+/* Direct webfont fallback for MyPortfolio token `prcf` */
+@font-face {
+  font-family: "prcf-direct";
+  src: url("https://use.typekit.net/af/cf890d/00000000000000007735c6b0/31/l?subset_id=2&fvd=n4&v=3") format("woff2"),
+       url("https://use.typekit.net/af/cf890d/00000000000000007735c6b0/31/d?subset_id=2&fvd=n4&v=3") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "prcf-direct";
+  src: url("https://use.typekit.net/af/22a932/00000000000000007735c6bc/31/l?subset_id=2&fvd=n7&v=3") format("woff2"),
+       url("https://use.typekit.net/af/22a932/00000000000000007735c6bc/31/d?subset_id=2&fvd=n7&v=3") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 /* Consistent Adobe/Typekit typography across all pages */
 html,
 body,
@@ -329,6 +348,6 @@ input,
 textarea,
 select,
 button {
-  font-family: prcf !important;
+  font-family: "prcf-direct", prcf !important;
 }
 
