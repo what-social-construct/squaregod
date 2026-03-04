@@ -310,25 +310,3 @@ html.lightbox-zoomed #lightbox-img-wrap .lightbox-extra {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* Consistent Adobe/Typekit typography across all pages */
-html,
-body,
-.site-wrap,
-.site-container,
-.site-content,
-.page-title a,
-.gallery-title a,
-.logo-text a,
-.logo a,
-.e2e-site-logo-text,
-.module-text,
-.rich-text,
-.project-cover .title,
-h1, h2, h3, h4, h5, h6,
-input,
-textarea,
-select,
-button {
-  font-family: prcf !important;
-}
-
