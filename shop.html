@@ -207,39 +207,3 @@
       </div>
     </div>
   </div>
-</body>
-<script type="text/javascript">
-  (function () {
-    var form = document.getElementById('embedded-artwork-form');
-    var success = document.getElementById('embedded-form-success');
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (res) {
-        if (res.ok) {
-          form.style.display = 'none';
-          if (success) success.style.display = 'block';
-        } else {
-          alert('Could not submit right now. Please try again.');
-        }
-      }).catch(function () {
-        alert('Could not submit right now. Please try again.');
-      });
-    });
-  })();
-</script>
-<script type="text/javascript">
-  // fix for Safari's back/forward cache
-  window.onpageshow = function(e) {
-    if (e.persisted) { window.location.reload(); }
-  };
-</script>
-  <script type="text/javascript">var __config__ = {"page_id":"p69a74c0158f9d7245666bb48f5eca8664a39e1fe96acf1bf3a7f1","theme":{"name":"marta\/marina"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
-  <script type="text/javascript" src="site/translations?cb=7df94a2ddcbe22adc555051e82573f2f32728fa2"></script>
-  <script type="text/javascript" src="dist/js/main.js?cb=7df94a2ddcbe22adc555051e82573f2f32728fa2"></script>
-</html>
